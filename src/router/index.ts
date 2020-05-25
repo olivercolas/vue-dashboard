@@ -11,12 +11,20 @@ const routes: Array<RouteConfig> = [
     component: Home,
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/pie-chart',
+    name: 'PieChart',
     // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
+    // this generates a separate chunk (PieChart.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+    component: () => import(/* webpackChunkName: "PieChart" */ '../views/PieChart.vue'),
+  },
+  {
+    path: '/geographic-chart',
+    name: 'Geographic',
+    // route level code-splitting
+    // this generates a separate chunk (Geographic.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "Geographic" */ '../views/Geographic.vue'),
   },
 ];
 
