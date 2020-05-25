@@ -1,6 +1,6 @@
 <template>
   <v-col style="margin:0;">
-    <Title text="Bar chart"/>
+    <Title text="Pie chart" />
   </v-col>
 </template>
 
@@ -11,5 +11,5 @@ import Title from '@/components/Title.vue';
 @Component({
   components: { Title },
 })
-export default class Home extends Vue {}
+export default class PieChart extends Vue {}
 </script>
