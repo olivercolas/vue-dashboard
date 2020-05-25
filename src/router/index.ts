@@ -26,6 +26,14 @@ const routes: Array<RouteConfig> = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "Geographic" */ '../views/Geographic.vue'),
   },
+  {
+    path: '/edit-data',
+    name: 'EditData',
+    // route level code-splitting
+    // this generates a separate chunk (EditData.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "EditData" */ '../views/EditData.vue'),
+  },
 ];
 
 const router = new VueRouter({
