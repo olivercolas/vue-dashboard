@@ -1,9 +1,5 @@
 <template>
   <v-app>
-    <!-- <v-app-bar dense app color="secondary" dark>
-      <v-toolbar-title>Vue Dashboard</v-toolbar-title>
-    </v-app-bar> -->
-
     <v-navigation-drawer app mini-variant permanent>
       <v-list dense nav>
         <v-list-item v-for="link in links" :key="link.title" :to="link.url">
@@ -46,6 +42,11 @@ export default class App extends Vue {
       icon: 'mdi-map-marker',
       title: 'Geographic',
       url: '/geographic-chart',
+    },
+    {
+      icon: 'mdi-pencil',
+      title: 'Edit Data',
+      url: '/edit-data',
     },
   ];
 
