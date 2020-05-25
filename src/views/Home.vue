@@ -39,12 +39,27 @@ export default class Home extends Vue {
 
   dataFormat = 'json';
 
+  get caption(): string {
+    const str = 'Total number of each ';
+    if (this.method === 'numOfGenders') {
+      return `${str}Gender`;
+    }
+    return `${str}Eye Color`;
+  }
+
+  get xaxisname(): string {
+    if (this.method === 'numOfGenders') {
+      return 'Gender';
+    }
+    return 'Eye Color';
+  }
+
   get dataSource(): object {
     return {
       chart: {
-        caption: 'Total number of each Gender',
+        caption: this.caption,
         // subcaption: '',
-        xaxisname: 'Gender',
+        xaxisname: this.xaxisname,
         yaxisname: 'Count',
         theme: 'fusion',
       },
