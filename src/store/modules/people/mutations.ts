@@ -11,8 +11,12 @@ export const mutations: MutationTree<PeopleState> = {
     const list = [
       ...state.list,
     ];
-    list.push(payload);
-    state.list = list;
+    const found = list.findIndex((person) => person._id === payload._id);
+    console.log('found: ', found)
+    if (found === -1) {
+      list.push(payload);
+      state.list = list;
+    }
   },
   UPDATE_PERSON(state, payload: { person: Person; index: number }) {
     Vue.set(state.list, payload.index, payload.person);
