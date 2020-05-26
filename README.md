@@ -1,6 +1,10 @@
 # vue-dashboard
 
-This project is built with VueJS + Typescript with Jest for unit testing and esLint for linting.
+This project is built with:
+
+- Framework: `VueJS` + `Typescript`
+- Testing: `Jest` 
+- Linting: `esLint`
 
 ## Project setup
 ```
