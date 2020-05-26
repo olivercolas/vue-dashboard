@@ -12,7 +12,6 @@ export const mutations: MutationTree<PeopleState> = {
       ...state.list,
     ];
     const found = list.findIndex((person) => person._id === payload._id);
-    console.log('found: ', found)
     if (found === -1) {
       list.push(payload);
       state.list = list;
