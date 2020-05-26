@@ -1,5 +1,7 @@
 # vue-dashboard
 
+This project is built with VueJS + Typescript with Jest for unit testing and esLint for linting.
+
 ## Project setup
 ```
 npm install
@@ -25,5 +27,6 @@ npm run test:unit
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Possible improvements
+1) Add Geographic chart
+2) Add more statistics on each page
