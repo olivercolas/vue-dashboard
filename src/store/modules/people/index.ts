@@ -5,7 +5,7 @@ import actions from './actions';
 import mutations from './mutations';
 import getters from './getters';
 
-const state = () => ({
+const state: (() => PeopleState) = () => ({
   list: [],
 });
 
